@@ -1,43 +1,71 @@
----
-layout: blog
-index: true
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="一起惠,广告联盟,cps联盟,联盟优势,高佣金,高奖励,结算快,无税收,免费技术支持">
+<meta name="Description" content="一起惠CPS广告联盟的优势，高佣金、高奖励、结算快、无税收、免费提供技术支持">
+<meta name="Author" content="http://www.yqhlm.com">
+<title>一起惠联盟优势 — 一起惠CPS广告联盟</title>
+<link href="css/examples.css" rel="stylesheet" type="text/css"  />
+<link href="css/jquery.pagepiling.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="res/js/jquery.min.js"></script>
+<script type="text/javascript" src="res/js/jquery.pagepiling.min.js"></script> 
+</head>
+<script type="text/javascript">
+	var deleteLog = false;
 
-{% for post in paginator.posts %}
-<div class="posts">
-  <section class="post">
-    <header class="post-header">
-      <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <p class="post-meta">
-        <i class="fa fa-calendar"></i>
-        {{ post.date | date: "%Y" }}年{{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日
-        <i class="space"></i>
-        {% for item in (0..post.categories.size) %}
-        {% unless forloop.last %}<i class="fa fa-tags"></i>{% endunless %}
-        <a class="post-category" href="/page/category.html#{{ post.categories[item] }}">{{ post.categories[item] }}</a>
-        {% endfor %}
-      </p>
-    </header>
-    <div class="post-main">
-      {{ post.content | split:'<!-- more -->'| first }}
-      <div class="readall"><a href="{{ post.url }}" id="post-readall">阅读全文&nbsp;<i class="fa fa-chevron-right"></i></a></div>
-    </div>
-  </section>
-</div>
-{% endfor %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-  {% if paginator.page == 2 %}
-  <a class="pagination-item newer" href="/"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;上一页</a>
-  {% else %}
-  <a class="pagination-item newer" href="/page/{{paginator.previous_page}}"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;上一页</a>
-  {% endif %}
-  {% else %}
-  <span class="pagination-item newer"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;上一页</span>
-  {% endif %}  
-  {% if paginator.next_page %}
-  <a class="pagination-item older" href="/page/{{paginator.next_page}}">下一页&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-  {% else %}
-  <span class="pagination-item older">下一页&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></span>
-  {% endif %}
-</div>
+	$(document).ready(function() {
+		$('#pagepiling').pagepiling({
+			menu: '#menu',
+			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+			sectionsColor: ['#4abaec', '#508ce4', '#51be74', '#18c8f7', '#ed6374', '#2C3E50'],
+			loopTop: true,
+			loopBottom: true
+		});
+	});
+</script> 
+<body>
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">一起惠CPS联盟优势</a></li>
+		<li data-menuanchor="page2"><a href="#page2">高佣金</a></li>
+		<li data-menuanchor="page3"><a href="#page3">高奖励</a></li>
+        <li data-menuanchor="page4"><a href="#page4">结算快</a></li>
+        <li data-menuanchor="page5"><a href="#page5">无税收</a></li>
+        <li data-menuanchor="page6"><a href="#page6">免费技术支持</a></li>
+	</ul>
+
+	<div style="position:fixed;top:50px;left:50px;color:white;z-index:999;" id="callbacksDiv"></div>
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+			<p class="zong"><a href="#" target="_blank" class="jion"></a></p>
+      </div>
+	    <div class="section" id="section2">
+	    	<div class="intro">
+				<p class="yongjin"><a href="#" target="_blank" class="more"></a></p>
+    	  </div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+				<p class="jiangli"><a href="#" target="_blank" class="gaojiangli"></a></p>
+    	  </div>
+	    </div>
+         <div class="section" id="section4">
+	    	<div class="intro">
+				<p class="jiesuan"><a href="#" target="_blank" class="jionus"></a></p>
+    	   </div>
+	    </div>
+        <div class="section" id="section5">
+	    	<div class="intro">
+				<p class="shuishou"><a href="#" target="_blank" class="jionus"></a></p>
+    	  </div>
+	    </div>
+        <div class="section" id="section6">
+	    	<div class="intro">
+				<p class="jishu"><a href="#" target="_blank" class="jionus"></a></p>
+    	  </div>
+	    </div>
+	</div>
+
+</body>
+</html>
