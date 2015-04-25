@@ -9,7 +9,7 @@ blog:
     description: 人生若只如初见                          # 博客描述
     title: 主页                                          # 网页标题
     url: index.html                                      # 博客地址
-    duoshuo:                                             # 多说ID
+    duoshuo: jmychou                                     # 多说ID
     tongji:                                              # 百度统计ID
     qiniu:                                               # 七牛云地址
 author:
