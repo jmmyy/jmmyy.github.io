@@ -347,6 +347,7 @@ footer {
 .comments {
 	margin:95px 0 -120px 0;
 }
+/* 隐藏多说ID信息*/
 .ds-powered-by {
 	font-size:0px !important;
 }
