@@ -16,5 +16,5 @@ author:
     name:                                                # 作者名称
     email:                                               # 邮箱地址
     weibo:                                               # 微博地址
-    github:                                              # GitHub地址
+    github: https://github.com/jmmyy                     # GitHub地址
     logo: /res/img/jmy.jpg                               # logo地址
