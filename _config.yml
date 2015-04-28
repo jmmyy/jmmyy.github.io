@@ -18,3 +18,17 @@ author:
     weibo:                                               # 微博地址
     github: https://github.com/jmmyy                     # GitHub地址
     logo: /res/img/jmy.jpg                               # logo地址
+
+
+everyday:
+  path: 'everyday' #日记的路径
+  enable: true #是否启用日记
+  author: '' #你的昵称
+  description: '' #日记页面的描述
+  highlight: #日记中的markdown代码高亮配置，使用highlight.js
+    languages: #需要高亮的语言
+      - 'javascript'
+      - 'css'
+      - 'xml'
+      - 'markdown'
+    style: 'github' #高亮使用的样式

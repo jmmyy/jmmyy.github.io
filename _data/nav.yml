@@ -10,6 +10,10 @@
   icon:  fa fa-book
   title: 阅读
 
+- href: /page/diary.html
+  icon: fa fa-envelope-o
+  title: 日记
+
 - href: /page/about.html
   icon: fa fa-paper-plane-o
   title: 关于
