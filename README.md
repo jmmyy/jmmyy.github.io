@@ -240,3 +240,5 @@ Github的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 
 
 <kbd>Ctrl</kbd>
+
+<del>测试一下</del>
